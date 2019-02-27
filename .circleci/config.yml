@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run: find .
       - run: dotnet restore
-      - run: dotnet pack --include-source --include-symbols -o ../../nuget
+      - run: dotnet pack src/GlobalX.Hypermedia.AspNetCore/GlobalX.Hypermedia.AspNetCore.csproj --include-source --include-symbols -o ../../nuget
