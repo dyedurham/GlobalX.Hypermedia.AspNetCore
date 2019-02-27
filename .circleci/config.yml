@@ -6,6 +6,5 @@ jobs:
     steps:
       - checkout
       - run: find .
-      - run: cd src
       - run: dotnet restore src/GlobalX.Hypermedia.AspNetCore/GlobalX.Hypermedia.AspNetCore.sln
       - run: dotnet pack src/GlobalX.Hypermedia.AspNetCore/GlobalX.Hypermedia.AspNetCore.sln --include-source --include-symbols -o ../../nuget
