@@ -90,6 +90,12 @@ If the accept header is `application/json+hal` then the response will be;
 
 ```
 
+## Publishing
+
+```bash
+dotnet pack --include-source --include-symbols -o ./nuget
+```
+
 
 ## Credits
 
