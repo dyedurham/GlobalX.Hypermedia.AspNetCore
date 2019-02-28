@@ -8,4 +8,4 @@ jobs:
       - run: find .
       - run: dotnet restore src/GlobalX.Hypermedia.AspNetCore.sln
       - run: dotnet pack src/GlobalX.Hypermedia.AspNetCore.sln --include-source --include-symbols -o ../../nuget      
-      - run: dotnet nuget push -k "$NUGET_KEY" -s https://api.nuget.org/v3/index.json ./nuget/GlobalX.Hypermedia.AspNetCore*.nupkg
+      - run: echo 'dotnet nuget push -k "$NUGET_KEY" -s https://api.nuget.org/v3/index.json ./nuget/GlobalX.Hypermedia.AspNetCore*.nupkg | bash'
