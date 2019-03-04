@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>GlobalX.Hypermedia.AspNetCore</id>
+        <version>1.0.2</version>
+        <description>A hypermedia formatter for ASP.NET API Responses</description>
+        <authors>Robert Ovens</authors>
+        <license type="expression">MIT</license>
+        <projectUrl>https://github.com/GlobalX/GlobalX.Hypermedia.AspNetCore</projectUrl>
+    </metadata>
+</package>

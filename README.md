@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/GlobalX/GlobalX.Hypermedia.AspNetCore.svg?style=svg)](https://circleci.com/gh/GlobalX/GlobalX.Hypermedia.AspNetCore)
+
 # GlobalX.Hypermedia.AspNetCore
 
 GlobalX.Hypermedia.AspNetCore transforms your plain old JSON objects into hypermedia aware response. Currently the only
@@ -94,6 +96,7 @@ If the accept header is `application/json+hal` then the response will be;
 
 ```bash
 dotnet pack --include-source --include-symbols -o ./nuget
+
 ```
 
 
