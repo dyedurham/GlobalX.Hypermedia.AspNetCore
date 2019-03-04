@@ -27,7 +27,7 @@ namespace GlobalX.Hypermedia.AspNetCore.Formatters
             
             _jsonSerializerSettings = new JsonSerializerSettings
             {
-                ContractResolver = new CamelCasePropertyNamesContractResolver()    
+                ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
         }
         public override Task WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
@@ -43,7 +43,7 @@ namespace GlobalX.Hypermedia.AspNetCore.Formatters
             return response.WriteAsync(jsonOfTest);
         }
         
-        private dynamic BuildHypermedia(object model, HttpContext context)
+        internal dynamic BuildHypermedia(object model, HttpContext context)
         {
             if (model == null) return null;
 
@@ -81,15 +81,15 @@ namespace GlobalX.Hypermedia.AspNetCore.Formatters
             return halModel;
         }
 
-        private static dynamic BuildDynamicLinksOrLink(IEnumerable<Link> grp)
+        internal static dynamic BuildDynamicLinksOrLink(IEnumerable<Link> grp)
         {
             return grp.Count()>1 ? grp.Select(l=>BuildDynamicLink(l)) : BuildDynamicLink(grp.First());
         }
 
-        private static dynamic BuildDynamicLink(Link link)
+        internal static dynamic BuildDynamicLink(Link link)
         {
             dynamic dynamicLink = new ExpandoObject();
-            dynamicLink.href = link.Href;
+            dynamicLink.href = Uri.EscapeUriString(link.Href);
             if (link.IsTemplated) dynamicLink.templated = true;
             if (!string.IsNullOrEmpty(link.Title)) dynamicLink.title = link.Title;
             return dynamicLink;

@@ -6,11 +6,13 @@ MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalX.Hypermedia.AspNetCore", "GlobalX.Hypermedia.AspNetCore\GlobalX.Hypermedia.AspNetCore.csproj", "{CAD5BAAF-D634-4334-8FA4-B5F46CA691B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43D56704-A154-4B34-81FE-5B636CE4F69E}"
-ProjectSection(SolutionItems) = preProject
-	..\.gitignore = ..\.gitignore
-	..\README.md = ..\README.md
-	..\.circleci\config.yml = ..\.circleci\config.yml
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+		..\.circleci\config.yml = ..\.circleci\config.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalX.Hypermedia.AspNetCore.Tests", "GlobalX.Hypermedia.AspNetCore.Tests\GlobalX.Hypermedia.AspNetCore.Tests.csproj", "{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,5 +39,17 @@ Global
 		{CAD5BAAF-D634-4334-8FA4-B5F46CA691B1}.Release|x64.Build.0 = Release|Any CPU
 		{CAD5BAAF-D634-4334-8FA4-B5F46CA691B1}.Release|x86.ActiveCfg = Release|Any CPU
 		{CAD5BAAF-D634-4334-8FA4-B5F46CA691B1}.Release|x86.Build.0 = Release|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Debug|x64.Build.0 = Debug|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Debug|x86.Build.0 = Debug|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Release|x64.ActiveCfg = Release|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Release|x64.Build.0 = Release|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{A49DC8E9-91A3-40B9-9E4C-74A9192200EE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
