@@ -20,7 +20,14 @@ namespace GlobalX.Hypermedia.AspNetCore.Formatters
 
         public HalOutputFormatter()
         {
-            SupportedMediaTypes.Add("application/json+hal");
+            // looks like the correct Accept is hal+json instead of json+hal
+            // ref: draft https://tools.ietf.org/html/draft-kelly-json-hal-00
+            // json+hal is kept for compatibility purpose
+            IEnumerable<string> mediaTypes = new List<string>{"application/hal+json","application/json+hal" };
+            foreach (var mediaType in mediaTypes)
+            {
+                SupportedMediaTypes.Add(mediaType);
+            }
 
             SupportedEncodings.Add(Encoding.UTF8);
             SupportedEncodings.Add(Encoding.Unicode);
@@ -42,7 +49,7 @@ namespace GlobalX.Hypermedia.AspNetCore.Formatters
             string jsonOfTest = JsonConvert.SerializeObject(hal, _jsonSerializerSettings);
             return response.WriteAsync(jsonOfTest);
         }
-        
+
         internal dynamic BuildHypermedia(object model, HttpContext context)
         {
             if (model == null) return null;

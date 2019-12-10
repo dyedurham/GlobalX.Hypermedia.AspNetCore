@@ -3,7 +3,7 @@
 # GlobalX.Hypermedia.AspNetCore
 
 GlobalX.Hypermedia.AspNetCore transforms your plain old JSON objects into hypermedia aware response. Currently the only
-Using the implemented standard is the [Hal Specification](http://stateless.co/hal_specification.html).
+Using the implemented standard is the [HAL Specification](https://tools.ietf.org/html/draft-kelly-json-hal-00).
 
 The library inspects the Accept header on requests. If set to `application/json+hal` it will transform the object into
 a HAL compliant response accoording to the definitions you provide.
