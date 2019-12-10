@@ -1,4 +1,10 @@
-steps:
-  - name: microsoft/dotnet:2.1-sdk
-    entrypoint: dotnet
-    args: ['build', 'src/GlobalX.Hypermedia.AspNetCore.sln']
+version: 2
+jobs:
+  build:
+    docker:
+      - image: mcr.microsoft.com/dotnet/core/sdk:2.1
+    steps:
+      - checkout
+      - run: find .
+      - run: dotnet restore src/GlobalX.Hypermedia.AspNetCore.sln
+      - run: dotnet pack src/GlobalX.Hypermedia.AspNetCore.sln --include-source --include-symbols -o ../../nuget

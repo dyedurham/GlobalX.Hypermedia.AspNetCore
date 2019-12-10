@@ -1,4 +1,0 @@
-steps:
-  - name: microsoft/dotnet:2.1-sdk
-    entrypoint: dotnet
-    args: ['build', 'src/GlobalX.Hypermedia.AspNetCore.sln']
