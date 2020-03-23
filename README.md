@@ -68,7 +68,7 @@ If the accept header is `application/json` then the response will be;
 
 ```
 
-If the accept header is `application/json+hal` then the response will be;
+If the accept header is `application/json+hal` or `application/hal+json` then the response will be;
 
 
 ```json
