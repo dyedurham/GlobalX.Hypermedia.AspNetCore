@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <PackageVersion>1.0.2</PackageVersion>
+    <PackageVersion>1.0.3</PackageVersion>
   </PropertyGroup>
   
   <PropertyGroup>
     <PackageId>GlobalX.Hypermedia.AspNetCore</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.3</Version>
     <Authors>Robert Ovens</Authors>
     <Company>GlobalX Pty Ltd</Company>
   </PropertyGroup>

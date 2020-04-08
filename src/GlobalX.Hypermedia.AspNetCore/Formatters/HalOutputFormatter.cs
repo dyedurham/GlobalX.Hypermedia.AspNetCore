@@ -96,7 +96,6 @@ namespace GlobalX.Hypermedia.AspNetCore.Formatters
         internal static dynamic BuildDynamicLink(Link link)
         {
             dynamic dynamicLink = new ExpandoObject();
-            dynamicLink.href = Uri.EscapeUriString(link.Href);
             if (link.IsTemplated) dynamicLink.templated = true;
             if (!string.IsNullOrEmpty(link.Title)) dynamicLink.title = link.Title;
             return dynamicLink;
